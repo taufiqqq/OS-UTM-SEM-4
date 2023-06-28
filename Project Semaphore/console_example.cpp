@@ -61,6 +61,8 @@ void bookDriver(Passenger *passenger)
         return;
     }
 
+//kena implement semaphore punya variable sini
+//means availibility, wait and signal tu
     int driverIndex = -1;
     for (int i = 0; i < MAX_DRIVERS; i++)
     {
