@@ -79,7 +79,7 @@ void *process_ride_request(void *arg)
 
 int main()
 {
-    printf("\nSemaphore-like Implementation - Uber-like System\n");
+    printf("\nSemaphore-like Implementation - Ehailing System\n");
 
     init_uber_system(&uber);
 
