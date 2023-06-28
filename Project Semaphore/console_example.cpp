@@ -10,6 +10,8 @@
 #define MAX_PASSWORD_LENGTH 20
 #define MAX_PASSENGERS 3
 
+int driverAvailability;
+
 typedef struct
 {
     char name[MAX_NAME_LENGTH];
@@ -61,8 +63,6 @@ void bookDriver(Passenger *passenger)
         return;
     }
 
-//kena implement semaphore punya variable sini
-//means availibility, wait and signal tu
     int driverIndex = -1;
     for (int i = 0; i < MAX_DRIVERS; i++)
     {
@@ -87,6 +87,8 @@ void bookDriver(Passenger *passenger)
 
     sem_post(&semaphore);
 }
+
+wait
 
 void updateRideStatus(Passenger *passenger)
 {
